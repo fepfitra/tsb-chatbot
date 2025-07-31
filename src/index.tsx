@@ -6,7 +6,7 @@ const app = new Hono()
 app.use(
 	'*',
 	cors({
-		origin: 'sendangbandung.com',
+		origin: 'https://sendangbandung.com',
 		allowHeaders: ['*'],
 		allowMethods: ['*'],
 		credentials: true,
