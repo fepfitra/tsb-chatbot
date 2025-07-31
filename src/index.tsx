@@ -3,15 +3,15 @@ import { cors } from 'hono/cors'
 
 const app = new Hono()
 // app.use('/*', cors({ origin: 'sendangbandung.com' }))
-// app.use(
-// 	'*',
-// 	cors({
-// 		origin: 'sendangbandung.com',
-// 		allowHeaders: ['Content-Type', 'Authorization'],
-// 		allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-// 		credentials: true,
-// 	})
-// );
+app.use(
+	'*',
+	cors({
+		origin: 'sendangbandung.com',
+		allowHeaders: ['Content-Type', 'Authorization'],
+		allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+		credentials: true,
+	})
+);
 
 app.get('/', (c) => {
 	return c.json({
