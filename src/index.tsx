@@ -7,8 +7,8 @@ app.use(
 	'*',
 	cors({
 		origin: 'sendangbandung.com',
-		allowHeaders: ['Content-Type', 'Authorization'],
-		allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+		allowHeaders: ['*'],
+		allowMethods: ['*'],
 		credentials: true,
 	})
 );
